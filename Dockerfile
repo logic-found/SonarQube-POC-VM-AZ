@@ -28,7 +28,7 @@ RUN dotnet sonarscanner begin \
 	/d:sonar.cs.vscoveragexml.reportsPaths="coverage.xml"
 
 # Copy everything
-COPY MuskaanDreamsAPI/ .
+COPY CalculatorApp/ .
 
 ## Build the app and collect coverage
 RUN dotnet build && \
@@ -38,4 +38,4 @@ RUN dotnet build && \
 ## Stop scanner
 RUN dotnet sonarscanner end /d:sonar.token="$SONAR_TOKEN"
 EXPOSE 5099
-CMD ["dotnet", "run","--project","MuskaanDreamsAPI"]
+CMD ["dotnet", "run","--project","CalculatorApp"]
