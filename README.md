@@ -5,7 +5,7 @@ The objective was to deploy SonarQube on Azure VM, set up the necessary configur
 
 - **Infrastructure Provisioning & Configuration Setup :** 
 1. Used Terraform script to deploy Azure VM.
-2. 2. Configured Docker, SonarQube on VM via bash script (provided the start.sh script in base64 format to azurerm_virtual_machine_extension resource in terraform for setting up the configuration)
+2. Configured Docker, SonarQube on VM via bash script (provided the start.sh script in base64 format to azurerm_virtual_machine_extension resource in terraform for setting up the configuration)
 
 - **Integrate SonarQube with Azure DevOps Pipeline :** 
 1. Used a Dockerfile
